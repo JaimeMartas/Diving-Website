@@ -116,6 +116,18 @@
        width: 300px;
        padding: 25px;
    }
+
+   #sourcedLink{
+        text-decoration: none;
+   }
+
+   #sourcedLink:hover{
+        text-decoration: none; 
+   }
+
+   #sourcedLink:visited{
+        text-decoration: none;
+   }
    
    /* legal */
    
