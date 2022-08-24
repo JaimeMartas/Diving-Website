@@ -144,3 +144,15 @@
        text-decoration: none;
        color: #ff0000;
    }
+
+   #myContact{
+        text-decoration: none;
+   }
+   
+   #myContact:hover{
+        text-decoration: none;
+   }
+
+   #myContact:visited{
+        text-decoration: none;
+   }
