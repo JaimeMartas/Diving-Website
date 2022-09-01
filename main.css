@@ -118,22 +118,23 @@
    }
 
    #sourcedLink{
-        text-decoration: none;
-   }
+    text-decoration: none;
+}
 
-   #sourcedLink:hover{
-        text-decoration: none; 
-   }
+#sourcedLink:hover{
+    text-decoration: none;
+    color: #880808;
+}
 
-   #sourcedLink:visited{
-        text-decoration: none;
-   }
+#sourcedLink:visited{
+    text-decoration: none;
+    color: orange; 
    
    /* legal */
    
-   #legal{
-       font-size: 1.25rem;
-   }
+   .legal{
+    font-size: 1.25rem;
+}
    
    #legal>footer>ul>li>a{
        text-decoration: none;
