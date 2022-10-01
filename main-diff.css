@@ -1,10 +1,19 @@
 /* global */
-    *{
-    font-family: 'Times New Roman', Arial, sans-serif;
-    }
-body{
-    background-color: #f1f1f1;
+*{
+ font-family: 'Times New Roman', Arial, sans-serif;   
 }
+
+body{
+    background-color: #f1f1
+
+/* 
+How to Stretch Full-Width Using Only CSS
+Here’s how I accomplished this.  I have CSS applied to the class name, .align-full , which is actually what WordPress Gutenberg (block editor) uses when you click the Full Width button on a block that supports it.
+
+What the first part does is set both the width and max-width to 100vw.  “vw” is a CSS unit of measurement that is a percentage of the viewport width.  So, 100vw is 100% of the viewport width (aka, the browser window).
+
+The second part uses calc() to calculate half of the width of the container minus half of the viewport width to come up with a negative pixel amount.  That negative pixel amount represents the exact amount of space between the edge of the container and the edge of the screen. Then, I apply that to the left margin.
+*/
 
 .container{
     width: 100vw;
@@ -138,13 +147,13 @@ section{
     color: #ff0000;
 }
 
-/* weather data */
+
+/* Weather data */
 
 .weatherData{
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-
 .weatherData>.article-content>.article-title{
     text-align: center !important;
 }
@@ -164,7 +173,6 @@ section{
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 2rem;
-
 }
 
 #weatherTable td, #weatherTable th {
@@ -194,12 +202,11 @@ section{
     text-align: center;
 }
 
-input [type="text"] {
+input[type="text"] {
     border: 0;
     width: 50%;
     padding: 0.625rem;
     margin-top: 0.3125rem;
-
 }
 
 .button {

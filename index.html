@@ -38,7 +38,10 @@
 <div class="factset">
     <section>
         <article>
-            <div class="article-container"><img class="imgResize" src="./imgs/pexels-domingo-dias-12626791.jpg" alt="">
+            <div class="article-container">
+                <div class="article-thumb-left">
+                <img class="imgResize" src="./imgs/pexels-domingo-dias-12626791.jpg" alt="">
+            </div>
                 <div class="article-content">
             <h2>Make Sure You Are Certified to Dive</h2>
             <p>
@@ -53,7 +56,9 @@
     </section>
     <section>
         <article>
-            <div class="article-container"><img class="imgResize" src="./imgs/pexels-richard-segal-1645028.jpg" alt=""></div>
+            <div class="article-container">
+            <div class="article-thumb-right">
+            <img class="imgResize" src="./imgs/pexels-richard-segal-1645028.jpg" alt=""></div>
             <div class="article-content">
             <h2>Make Sure You're Fit to Dive</h2>
             <p>If you've never been diving before, you should have a medical examination in your home country to ensure you're fit to dive. If you're generally fit and healthy, there should be no problem. You will be required to sign a medical statement before learning to dive.
@@ -68,7 +73,9 @@
 
     <section>
         <article>
-            <div class="article-container"><img class="imgResize" src="imgs/pexels-tom-fisk-1670468.jpg" alt=""></div>
+            <div class="article-container">
+                <div class="article-thumb-left">
+                <img class="imgResize" src="imgs/pexels-tom-fisk-1670468.jpg" alt=""></div>
             <div class="article-content">
             <h2>Double Check All Your Scuba Gear</h2>
             <p>En route to the dive site, you will need to set up all your scuba gear. Take your time and double-check everything is working. If you are not sure about anything, don't be embarrassed – ask your guide or instructor..</p>
@@ -78,6 +85,42 @@
         </article>
     </section>
 </div>
+
+<!--Weather data-->
+
+<section>
+    <article>
+        <div class="article-container weatherData">
+
+            <div class="article-content">
+                <h2 class="article-title">
+                    What is the weathr like where we are diving
+                </h2>
+                <div class="whereTo">
+                    <label for="data"></label>
+                    <input type="text" id="data" placeholder="Enter your City, State/Country here..."><span><button class="button" onclick="getWeatherDataValue()">Search</button></span>
+
+                    <!-- table -->
+                    <table id="weatherTable">
+                        <tr>
+                            <th>City</th>
+                            <th>State/Country</th>
+                            <th>Temperature</th>
+                            <th>Description</th>
+                            <th>Wind Speed</th>
+                            <th>Wind Direction</th>
+                            <th>Humidity</th>
+                        </tr>
+                        <tr id="dataEntry">
+
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
 
     <!--footer-->
 
