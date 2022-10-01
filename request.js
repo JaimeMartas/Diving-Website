@@ -1,14 +1,18 @@
 
+let getWeather = (data) => {
+   
+    let weatherurl = `https://api.openweathermap.org/data/2.5/weather?q=${data}&APPID=fe2e25be076abfb7b948ebb4743d71d2` ;
+}
 
-//set two variables to 5 and 6
+let getWeatherDataValue = () => {
+    let enteredData = document.getElementById('data').value;
 
-let numb1 = 5;
-let numb2 = 6;
-let hello = 'Hello World'
+    // console.log(enteredData);
+  
+    getWeather(enteredData);
 
-console.log(numb1)
-console.log(numb2)
 
-console.log(numb1 + numb2);
-console.log(hello);
-console.log(hello + numb1); 
+}
+
+
+
