@@ -6,35 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn to Dive</title>
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
 
+   <!-- Navbar -->
     <div id="navbar">
         <nav>
-            <uL>
+            <ul>
                 <li><a href="#">Safety</a></li>
                 <li><a href="#" target="_blank">Scuba Facts</a></li>
                 <li><a href="#" target="_blank">Dive Sites</a></li>
-            </uL>
+            </ul>
         </nav>
     </div>
 
-
- 
-    <div class="h1 title">
-        <h1>Learn to Dive</h1>
-        <!-- <h1 id="h1id">Learn to Dive</h1>
-        <h1 class="h1class">Learn to Dive</h1> -->
+    <!-- Title Start -->
+    <div class="container">
+        <div class="h1title">
+            <h1>Learn to Dive</h1>
+        
+                <video width="100%" height="" autoplay muted loop id="divingVideo">
+                    <source src="./imgs/Pexels Videos 1456686.mp4" type="video/mp4">
+                    Your browser cannot play Video
+                </video>
+              
+        </div>
     </div>
 
-    <video autoplay muted loop id="divingVideo">
-        <source src="./imgs/Pexels Videos 1456686.mp4" type="video/mp4">
-        Your browser cannot play Video
-    </video>
 
 <div class="factset">
     <section>
         <article>
+            <div class="article-container">
+                <div class="article-thumb-left">
+                <img class="imgResize" src="./imgs/pexels-domingo-dias-12626791.jpg" alt="">
+            </div>
+                <div class="article-content">
             <h2>Make Sure You Are Certified to Dive</h2>
             <p>
                 Some dive operators require you to have proof of dive certification and/or specialty competency depending on the type of dive. Always gain your dive certification from a licensed dive operator before you travel or before you start diving on your trip.
@@ -42,40 +50,124 @@
                 Some operators offer introductory dive courses (like a taste tester), however, these are not a green light for you to dive whenever and wherever you want. If you do dive uncertified or if you are uncertified and dive without a certified diver (as required), you won't be covered by travel insurance.
                 
                 Travel insurance policy wordings contain information around cover for scuba diving. Read this carefully before you dive to know and understand what you are covered for. If you have any questions around cover, please ask the insurer for help.</p>
-
-
+        </div>
+             </div>
         </article>
     </section>
     <section>
         <article>
+            <div class="article-container">
+            <div class="article-thumb-right">
+            <img class="imgResize" src="./imgs/pexels-richard-segal-1645028.jpg" alt=""></div>
+            <div class="article-content">
             <h2>Make Sure You're Fit to Dive</h2>
             <p>If you've never been diving before, you should have a medical examination in your home country to ensure you're fit to dive. If you're generally fit and healthy, there should be no problem. You will be required to sign a medical statement before learning to dive.
                 
                 If you're already certified to dive, avoid diving if you're not feeling one hundred percent. In particular, don't dive if you've got a head cold or a hangover. Save the party for the end of your diving trip.</p>
 
-              <p>Don't be tempted to swim off on your own when you spot something interesting – point it out to your guide and dive buddy and head towards it together. Staying with your buddy and guide is important for safety and also your orientation. If you do lose each other underwater, look around for one minute, and if you still can't see them, slowly ascend to the surface where they should have done the same.</p>
-        </article>
+            <p>Don't be tempted to swim off on your own when you spot something interesting – point it out to your guide and dive buddy and head towards it together. Staying with your buddy and guide is important for safety and also your orientation. If you do lose each other underwater, look around for one minute, and if you still can't see them, slowly ascend to the surface where they should have done the same.</p>
+        </div>
+    </div>
+            </article>
     </section>
+
     <section>
         <article>
+            <div class="article-container">
+                <div class="article-thumb-left">
+                <img class="imgResize" src="imgs/pexels-tom-fisk-1670468.jpg" alt=""></div>
+            <div class="article-content">
             <h2>Double Check All Your Scuba Gear</h2>
             <p>En route to the dive site, you will need to set up all your scuba gear. Take your time and double-check everything is working. If you are not sure about anything, don't be embarrassed – ask your guide or instructor..</p>
-            <p>Source <a href="https://www.worldnomads.com/travel-safety/worldwide/safe-scuba-diving">World Nomads</a></p>
+            <p>Source <a id="sourcedLink" href="https://www.worldnomads.com/travel-safety/worldwide/safe-scuba-diving">World Nomads</a></p>
+            </div>
+        </div>    
         </article>
     </section>
 </div>
 
+<!--Weather data-->
 
+<section>
+    <article>
+        <div class="article-container weatherData">
+
+            <div class="article-content">
+                <h2 class="article-title">
+                    What is the weathr like where we are diving
+                </h2>
+                <div class="whereTo">
+                    <label for="data"></label>
+                    <input type="text" id="data" placeholder="Enter your City, State/Country here..."><span><button class="button" onclick="getWeatherDataValue()">Search</button></span>
+
+                    <!-- table -->
+                    <table id="weatherTable">
+                        <tr>
+                            <th>City</th>
+                            <th>State/Country</th>
+                            <th>Temperature</th>
+                            <th>Description</th>
+                            <th>Wind Speed</th>
+                            <th>Wind Direction</th>
+                            <th>Humidity</th>
+                        </tr>
+                        <tr id="dataEntry">
+
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+    <!--footer-->
+
+<div class="container"></div>
 <div id="Legal">
     <footer>
-        <ul>
-            <li>©2022</li>
-            <li>Jaime</li>
-            <li>AIM Institute</li>
-            <li><a href="mailto:jaimemartas507@gmail.com">Email Me!</a></li>
-        </ul>
+        <!--Footer Main-->
+
+        <section class="ft-main">
+            <div class="ft-main-item">
+                <h2>
+                    Contact Info
+                </h2>
+                <ul>
+                    <li>©2022</li>
+                    <li>Jaime Martas</li>
+                    <li>AIM Institute</li>
+                    <li><a href="mailto:jaimemartas507@gmail.com">Email Me!</a></li>
+                </ul>
+            </div>
+
+        <div class="ft-main-item">
+            <h2 class="ft-title">
+                Stay Updated
+            </h2>
+            <p>Subscribe to our newsletter to get our latest updates!</p>
+            <form action="">
+                <input type="email" name="email" placeholder="Enter your email address">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+
+    <section class="ft-social">
+    <ul class="ft-social-list">
+           <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a</li>
+            <li><a href=""><i class="fa fa-github"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube"></i></a></li>
+    </ul>
+    </section>
+
+
     </footer>
 </div>
 <script src="request.js"></script>
+<script src="https://kit.fontawesome.com/bb17c034e4.js" crossorigin="anonymous"></script>
 </body>
 </html>
